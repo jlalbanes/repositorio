@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Gran Hotel Acapulco. Habitaciones</title>
+		<!-- Favicon -->
+		<link rel="icon" href="favicon.ico" type="image/ico">
+		<!-- Inclusion de estilos CSS externo-->
+		<link rel="stylesheet" href="css/estilos.css" type="text/css">
+	</head>
+	<body>
+
+		<div id="pantalla">
+			
+			<div class="bg_nav"></div>		
+	
+			<div class="contenedor">
+				
+				<!-- Menu para la navegación -->
+					<nav>
+						<!-- Logo del Hotel -->
+						<div class="logo">
+							<h1>
+								<a href="index.html"><img src="img/logo.png" alt="Gran Hotel Acapulco"></a>	
+							</h1>
+						</div>
+
+						
+						<ul class="nav-menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="servicios.html">Servicios</a></li>
+							<li><a href="habitaciones.html">Habitaciones</a></li>
+							<li><a href="tarifas.html">Tarifas</a></li>
+							<li><a href="ubicacion.html">Ubicación</a></li>	
+							<li><a href="reservas.html">Reservas</a></li>
+						</ul>
+											
+						<!-- Idiomas -->
+						<div class="nav-language">
+							<a href="en/in_construction.html"><img src="img/en.png" alt="">English</a>
+							<a href="index.html"><img src="img/es.png" alt="">Español</a>
+						</div>
+
+					</nav>
+
+					
+				<!-- Header -->
+				<header>
+					
+					<div>
+						<ul class="redes_sociales">
+							<li><a href="https://www.facebook.com/GrandHotelAcapulc0" target="_blank"><img src="img/social/facebook.png" alt="Facebook"></a></li>
+							<li><a href="https://twitter.com/GRANDHOTEL_ACA" target="_blank"><img src="img/social/twitter.png" alt="Twitter"></a></li>
+							<li><a href="https://mx.linkedin.com/in/grand-hotel-acapulco-and-convention-center-658a0933" target="_blank"><img src="img/social/linkedin.png" alt="Linkedin"></a></li>
+						</ul>
+					</div>
+					
+					<!-- Formulario para consulta de disponibilidad según fechas-->
+					<div class="consulta_disp">
+							<h3>Haga su consulta de disponibilidad Ahora!</h3>
+							<!-- Formulario de consulta disponibilidad -->
+							<form action="php/consulta_disponibilidad.php" method="post">
+								
+								<div class="form-group_index">	
+									<label class="check_in_out" for="date_in">Check IN</label>
+									<input type="date" name="fecha_ingreso" id="date_in">
+								</div>
+								
+								<div class="form-group_index">
+									<label class="check_in_out" for="date_out">Check OUT</label>
+									<input type="date" name="fecha_egreso" id="date_out">		
+								</div>
+								
+								<input class="btn btn_submit" type="submit" value="Buscar Disponibilidad">
+							
+							</form>
+					</div>
+						
+					<!-- Datos para reserva telefónica -->
+					<!--div class="reservas consulta_disp"!-->	
+					<div class="reservas_tel">		
+						<h2>Reservas Telefónicas:</h2>
+						<a href="tel:543541424931">+54 (3541) 424931</a>
+						<a href="tel:543541427772">+54 (3541) 427772</a>
+					</div>
+						
+					<!-- Aqui algo para usar el lugar vacio a la izquierda de la promocion-->
+					<div class="galeria">	
+						
+						<a class="img1" href="#"></a>
+						<a class="img2" href="#"></a>
+						<a class="img3" href="#"></a>
+						<a class="img4" href="#"></a>
+						<a class="img5" href="#"></a>
+						<a class="img6" href="#"></a>
+						<a class="img7" href="#"></a>
+
+						<div class="habitacion hab_estandard">
+							<img class="img_01" src="img/testimonios.jpg" width="400" alt="Fotos Hotel">		
+						</div>	
+						
+						
+						<div class="habitacion hab_suite_torre">	
+							<img class="img_02" src="img/habitaciones/suite_torre.jpg" width="400" alt="Fotos Hotel">
+						</div>	
+
+						<div class="habitacion hab_grand">
+							<img class="img_03" src="img/habitaciones/grand.jpg" width="400" alt="Fotos Hotel">	
+						</div>
+
+						<div class="habitacion hab_presidencial">			
+							<img class="img_04" src="img/habitaciones/suite_presidencial.jpg" width="400" alt="Fotos Hotel">				
+						</div>
+
+						<div class="habitacion serv_hotel">			
+							<img class="img_05" src="img/servicios/jardin.jpg" width="400" alt="Fotos Hotel">
+						</div>
+
+						<div class="habitacion serv_resto">			
+							<img class="img_06" src="img/servicios/resto.jpg" width="400" alt="Fotos Hotel">
+						</div>
+
+						<div class="habitacion serv_pileta">			
+							<img class="img_06" src="img/servicios/pileta_climatizada.jpg" width="400" alt="Fotos Hotel">
+						</div>
+
+					</div>
+
+					<!--Datos para promociones-->
+					<div class="promocion">
+						<a href="#modal">
+							<h2>Especial Noche de Bodas</h2>
+							<figure>
+								<img src="img/promo/noche_bodas.jpg" alt="Promo Noche de Bodas">
+								<figcaption>
+									Reservá tu noche de bodas 40% Off!!
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+						
+				</header>
+						
+				<!-- Seccion descriptiva de habitaciones -->
+				<section>
+					<h2 id="subir">Habitaciones</h2>
+					<!-- Fila de imagenes de habitaciones disponibles con ancla a cada descripción-->
+					<div class="habitaciones_img">
+						
+						<a class="img1" href="#estandard"><img src="img/habitaciones/estandard.jpg" alt="Habitación Estandard"></a>
+						<a class="img2" href="#suite_torre"><img src="img/habitaciones/suite_torre.jpg" alt="Habitacion Suite Torre"></a>
+						<a class="img3" href="#grand"><img src="img/habitaciones/grand.jpg" alt="Habitación Grand"></a>
+						<a class="img4" href="#presidencial"><img src="img/habitaciones/suite_presidencial.jpg" alt="Habitación Presidencial"></a>
+						
+						<!--Habitaciones del Hotel--> 
+					
+						<!-- Habitacion Estandard -->
+						<!--article id="estandard" class="hab_estandard"-->
+						<div class="habitacion hab_estandard">
+							<h3>Habitación Estandard</h3>
+							<img class="img_01" src="img/habitaciones/estandard.jpg" width="400" alt="Habitación Estandard">	
+
+							<div>
+								<p>
+									Ofrecen una inigualable vista a nuestros hermosos jardines y área de albercas, así como de la Bahía de Acapulco y el Océano Pacífico, habitaciones espaciosas con estilo fresco y decoración relajada, que pueden ser solicitadas con dos camas dobles o cama King size, todas ellas cuentan con balcón privado. Ubicadas en los pisos 2 al 14.
+								</p>
+								<p>
+									Capacidad Máxima: 2 adultos 2 menores, o 3 adultos 1 menor, o 4 adultos (aplica sólo montaje original de camas y se pueden ofrecer camas extras pagando costo por 3ª o 4ª persona). CAMAS: Categoría disponible con una cama King size ó dos camas.
+								</p>
+							</div>
+							<!--h3>Servicios:</h3-->
+							
+							<ul>
+								<li>• Televisión de 25'.</li>
+								<li>• Servicio de TV por cable.</li>
+								<li>• Correo de Voz.</li>
+								<li>• Wifi.</li>
+								<li>• Control individual de aire acondicionado.</li>
+							</ul>	
+						
+						</div>	
+						
+						<!--a href="#subir">Subir</a-->		
+						
+						<!--/article-->
+					
+
+						<!-- Habitacion Suite_Torre -->
+						<!--article id="suite_torre" class="hab_suite_torre"-->
+						<div class="habitacion hab_suite_torre">	
+							<h3>Habitación Suite Torre</h3>
+							<img class="img_02" src="img/habitaciones/suite_torre.jpg" width="400" alt="Habitación Suite Torre">			
+							<div>
+								<p>
+									Disfrute de la espectacular vista frontal a la Bahía de Acapulco desde esta espaciosa y confortable Suite con elegante decoración en las áreas de sala y comedor, con un doble balcón amueblado, y recámara con cama King size que puede conectar a una habitación doble.
+								</p>
+								<p>
+									Capacidad Máxima: 2 adultos 2 menores o 3 adultos 1 menor o 4 adultos (aplica sólo montaje orginal de camas). CAMAS: Categoría disponible con una cama king size.
+								</p>
+
+							</div>
+
+							<!--h3>Servicios:</h3-->
+							<ul>
+								<li>• Televisión de 25'.</li>
+								<li>• Servicio de TV por cable.</li>
+								<li>• Correo de Voz.</li>
+								<li>• Wifi.</li>
+								<li>• Control individual de aire acondicionado.</li>
+								<li>• Secadora de cabello.</li>
+								<li>• caja de seguridad.</li>
+								<li>• Estancia independiente.</li>
+								<li>• Equipo de planchado.</li>
+								<li>• Cuna para bebés (bajo solicitud).</li>
+								<li>• Camas extra (bajo solicitud.)</li> 
+							</ul>	
+							
+						<!--/article-->	
+						</div>	
+
+						<!-- Habitacion Grand -->
+						<!--article id="grand" class="hab_grand"-->
+						<div class="habitacion hab_grand">
+							<h3>Habitación Grand</h3>
+							<img class="img_03" src="img/habitaciones/grand.jpg" width="400" alt="Habitación Grand">
+
+							<div>	
+								<p>
+									Esta hermosa habitación de diseño vanguardista y sofisticado le dará máxima comodidad durante su estancia, además  cuenta con un mobiliario en maderas tropicalizadas con diseños exclusivos, está decorada con telas en colores vivos y confortables, pantalla LCD, radio reloj despertador, conexión para ipod y toda la tecnología necesaria para hacer su estancia placentera. La terraza cuenta con un diseño novedoso y ambiente fresco, muebles de playa y barandales transparentes de cristal templado. Ubicadas en los pisos  03 y 16 al 19
+								</p>
+								<p>
+									Capacidad Máxima: 2 adultos 2 menores, o 3 adultos 1 menor. (Aplica sólo montaje original de camas). CAMAS: Categoría disponible con una cama King size o dos camas.
+								</p>
+
+							</div>
+
+							<!--h3>Servicios:</h3-->
+							<ul>
+									<li>• TV LCD 42'.</li>
+									<li>• Servicio de TV por cable.</li>
+									<li>• Correo de Voz.</li>
+									<li>• Ventilador de techo.</li>
+									<li>• Control individual de aire acondicionado.</li>
+									<li>• Equipo de planchado.</li>
+									<li>• Secadora de cabello.</li>
+									<li>• Radio reloj despertador.</li>
+									<li>• Conexión paa ipod.</li>
+									<li>• Caja de seguridad.</li>
+									<li>• Wifi.</li> 
+							</ul>	
+
+								
+						<!--/article-->		
+						</div>
+
+						<!-- Habitacion Presidencial -->
+						<!--article id="presidencial" class="hab_presidencial"-->
+						<div class="habitacion hab_presidencial">	
+							<h3>Habitación Presidencial</h3>
+							<img class="img_04" src="img/habitaciones/suite_presidencial.jpg" width="400" alt="Habitación Presidencial">			
+							
+							<div>
+								<p>
+									Disfrute de la majestuosidad que le ofrece nuestra exclusiva Suite Presidencial de 334 m2 con una inigualable y espectacular vista panorámica a la Bahía de Acapulco, su elegante decoración moderna y sofisticada con detalles en fibras tropicales hechos a mano, de la región del Estado de Guerrero, le darán la máxima comodidad.
+								</p>
+								<p>	
+									Pisos de mármol y puertas de madera con vistosos detalles exclusivos, áreas separadas de sala y comedor con 8 plazas, cocina integral completa con refrigerador, rincón de lectura, mesa de juego de cuatro plazas, persiana automáticas, amplia terraza alrededor de la suite, tres recámaras: dos recámaras con cama King size con baños con cabina de ducha separada con sistema de regadera a presión controlada, la ducha de la recamara principal incluye sistema de vapor controlado automáticamente, amplios closets, caja de seguridad.
+								</p>
+								<p>
+									Capacidad Máxima: 6 adultos 4 menores. CAMAS: Categoría disponible con una cama king size en recamara principal, 2 camas en la segunda y tercer recámara.
+								</p>
+							</div>
+
+							<!--h3>Servicios:</h3-->
+							<ul>
+									<li>• LCD de 42” en cada recámara.</li>
+									<li>• Señal de TV por cable.</li>
+									<li>• Correo de voz.</li>
+									<li>• Ventilador de techo en cada recámara.</li>
+									<li>• Control individual de Aire Acondicionado.</li>
+									<li>• Secadora de cabello.</li>
+									<li>• Caja de seguridad.</li>
+									<li>• Cocina Integral con refrigerador.</li>
+									<li>• Mesa de juego.</li>
+									<li>• Rincón de lectura.</li>
+									<li>• Internet inalámbrico en cortesía.</li>
+									<li>• Servicio de planchado en cortesía.</li>
+									<li>• Servicio de café en cortesía.</li>
+									<li>• Estacionamiento en cortesía.</li>
+									<li>• Servicio de Valet Parking en cortesía.</li>
+									<li>• Tres recámaras con baño privado cada una.</li>
+							</ul>	
+							
+							
+							<!--a href="#subir">Subir</a-->		
+						
+						<!--/article-->	
+						</div>
+
+					</div>
+					
+					<div class="res">
+						<a class="btn" href="tarifas.html">Ver Tarifa</a>	
+						<a class="btn btn-reserva" href="reservas.html">Reservar</a> 
+					</div>
+
+				</section>
+
+
+				<!-- Algunos datos externos a la informacion del Hotel -->
+				<aside class="aside-article">																
+						
+						<h3>Sabias Que...</h3>
+
+						<article>
+													
+							<div class="aside_titulo">
+								<h4>27 de abril de 2017</h4>
+							</div>	
+						
+							
+							<div class="aside_text">
+									<p>
+										Descubrieron que caminar, produce un estado de relajación y meditación más intenso, menos frustración y una mayor sensación de bienestar!. Compruebalo! camina en nuestros parques y jardines..
+									</p>
+							</div>
+							
+							<figure>
+								<img src="img/caminar.jpg" alt="Caminar en parques y jardines">
+							</figure>
+
+						</article>
+				
+						<article>
+							
+							<div class="aside_titulo">
+								<h4>02 de Mayo de 2017</h4>
+							</div>	
+							
+													
+							<div class="aside_text">
+									<p>
+										CERRÁ LOS OJOS UN MOMENTO, RESPIRÁ HONDO E IMAGINATE LA SENSACIÓN...climatizamos nuestra piscina a 25ºC para que puedas disfrutar de un momento placentero con la maravillosa vista del lago.
+									</p>	
+							</div>	
+							
+							<figure>
+								<img src="img/relax.jpg" alt="Relax Piscina Climatizada">
+							</figure>
+
+						</article>
+
+						<article>
+
+							<div class="aside_titulo">
+								<h4>31 de Mayo de 2017</h4>
+							</div>	
+							
+							<div class="aside_text">
+									<p>	
+										Tomate un respiro de la locura cotidiana, en <span> Gran Hotel Acapulco </span> tenemos todo preparado para una estancia renovadora.
+										<span>¡Aprovechá las promos con tarjeta </span> Visa, AmericanExpress o Mastercard. ¡Hacé tu reserva hoy! +54 (03541) 424931 / 2
+									</p>	
+							</div>	
+							
+							<figure>
+								<img src="img/portada_hotel.jpg" alt="Gran Hotel Acapulco">
+							</figure>
+							
+						</article>
+					
+				</aside>
+				
+
+				<!-- Pie de pagina footer -->
+			<footer>
+				<div class="contenedor_footer">	
+					
+					<!--Foto Hotel-->
+					<!--div class="caja_footer hotel">
+						
+						<img src="img/portada_hotel.jpg" alt="Portada Gran Hotel Acapulco">
+						<p>Hotel & Convention Center</p>
+						<img class="icono" src="img/tres_estrellas.png" alt="Hotel Tres Estrellas">
+					</div-->
+
+
+					<!-- Contacto -->
+					<div class="caja_footer">
+						<h2>Gran Hotel Acapulco</h2>
+						<p>
+							Es un placer atenderlo a los siguientes telefonos o personalmente en nuestras sucursales.
+						</p>
+						
+
+						<!-- Ubicacion en Argentina -->
+						<div id="ubicacion_arg">
+								<p><span>Ubicación en Bs. As. Argentina: </span>Oficina en Bs As. Maipu 1210 piso 8 (1006) C.A.B.A.</p>
+								<p><span>Tel: </span><a href="tel:01143270693">011-4327-0693</a></p>
+								<p><span>Email: </span><a href="mailto:GranHotelAcapulco@gmail.com">Gran  Hotel Acapulco@gmail.com</a></p>	
+						</div>		
+						
+						<!-- Ubicacion en Mexico -->
+						<div id="ubicacion_mx">
+								<p><span>Ubicación en México: </span>Gob. Alvarez esq. J.L. de Cabrera Código Postal 5152</p>	
+								<p><span>Tel: </span> <a href="tel:543541424931">(+54) 3541 424931</a></p>
+								<p><span>Fax: </span><a href="tel:543541427772">(+54) 3541 427772</a></p>	
+								<p><span>Email: </span><a href="mailto:reservaciones@ghacc.com">reservaciones@ghacc.com</a></p>	  
+						</div>
+					</div>
+										
+					<!-- Novedades -->
+					<!--div class="caja_footer">
+						<h2>Novedades</h2> 
+						<h3>27/05/2017. Festival de fuegos artificiales</h3>
+						<img src="img/fuegos_artificiales.jpg" alt="Festival de fuegos artificiales">
+					</div-->
+					
+					<!-- Trabaja con Nosotros -->
+					<div class="caja_footer reclutar">
+						<h2>Trabaja con Nosotros</h2>
+						<a href="formulario_cv.html">Completa el Formulario</a>
+					</div>
+	
+				</div>	
+			</footer>
+
+
+				</div> <!--#contenedor-->
+			
+					
+			
+			<!--Publicidad Angecia Digital -->
+			<div class="mente_digital">
+					<p>Desarrollado por <a href="http://www.mentedigital.com.ar" target="_blank">Mente Digital 2017®</a></p>
+			</div>	
+			
+		</div> <!--pantalla-->
+		
+		<!-- Ventana modal Promocion Bodas-->
+		<div id="modal" class="modal_mask">
+			<div class="content">
+				<a href="" class="cerrar">X</a>
+				<p class="promo-texto">Promoción para tu Noche de Bodas imperdible!!!</p>
+				<p><span>U$s 150</span><br>Habitación Suite Torre</p>
+				<p><span>U$s 180</span><br>Habitación Grand</p>
+				<img src="img/promo/promo_bodas.jpg" alt="Noche de Bodas">
+			</div>
+		</div>
+	</body>
+	</html>
