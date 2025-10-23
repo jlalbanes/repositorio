@@ -1,1 +1,2 @@
 Contenido de Archivo de prueba
+Agregamos informacion al archivo para que cambie y poder probar elcomando pull para actualizar el contenido nuevo que se genra en el repositorio remoto en el repositorio local.
